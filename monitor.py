@@ -35,6 +35,16 @@ for interface, addresses in network_interfaces.items():
     if ip_address != "N/A":
         break
 
+boot_time = psutil.boot_time()
+current_time = datetime.now().timestamp()
+
+uptime_seconds = current_time - boot_time
+
+days = int(uptime_seconds // 86400)
+hours = int((uptime_seconds % 86400) // 3600)
+minutes = int((uptime_seconds % 3600) // 60)
+
+
 print ("Hostname :" , hostname)
 print ("Current User :" , current_user)
 print ("Current Date & Time :", current_datetime) 
@@ -52,3 +62,4 @@ print ("Used :", round(used_disk, 2), "GB")
 print ("Free :", round(free_disk, 2), "GB")
 print ("Usage :", disk_usage, "%")
 print ("Ip Address :" , ip_address)
+print ("Uptime :", days, "days,", hours, "hours,", minutes, "minutes")
