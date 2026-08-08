@@ -62,7 +62,7 @@ The script automatically generates a server health report inside:
 ```text
 reports/server_report.txt
 
-
+```
 
 
 ## Sample Output
