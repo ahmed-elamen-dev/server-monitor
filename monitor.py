@@ -23,19 +23,32 @@ used_disk = disk.used / (1024 ** 3)
 free_disk = disk.free / (1024 ** 3)
 disk_usage = disk.percent
 
+network_interfaces = psutil.net_if_addrs()
+
+ip_address = "N/A"
+
+for interface, addresses in network_interfaces.items():
+    for address in addresses:
+        if address.family == socket.AF_INET and address.address != "127.0.0.1":
+            ip_address = address.address
+            break
+    if ip_address != "N/A":
+        break
+
 print ("Hostname :" , hostname)
 print ("Current User :" , current_user)
 print ("Current Date & Time :", current_datetime) 
 print ("Operating System :" , operating_system)
 print ("Kernel Version :" , kernel_version)
 print ("CPU Usage :" ,cpu_usage, "%")
-print("Memory Usage:")
-print("Total :", round(total_ram, 2), "GB")
-print("Used :", round(used_ram, 2), "GB")
-print("Free :", round(free_ram, 2), "GB")
-print("Usage :", memory_usage, "%")
-print("Disk Usage:")
-print("Total :", round(total_disk, 2), "GB")
-print("Used :", round(used_disk, 2), "GB")
-print("Free :", round(free_disk, 2), "GB")
-print("Usage :", disk_usage, "%")
+print ("Memory Usage:")
+print ("Total :", round(total_ram, 2), "GB")
+print ("Used :", round(used_ram, 2), "GB")
+print ("Free :", round(free_ram, 2), "GB")
+print ("Usage :", memory_usage, "%")
+print ("Disk Usage:")
+print ("Total :", round(total_disk, 2), "GB")
+print ("Used :", round(used_disk, 2), "GB")
+print ("Free :", round(free_disk, 2), "GB")
+print ("Usage :", disk_usage, "%")
+print ("Ip Address :" , ip_address)
