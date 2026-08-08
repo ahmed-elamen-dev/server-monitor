@@ -37,3 +37,29 @@ server-monitor/
 ├── README.md
 ├── .gitignore
 └── requirements.txt
+
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <your-github-repository-url>
+cd server-monitor
+
+
+pip3 install -r requirements.txt
+ ```
+## How to Run
+
+
+Run the monitoring script using:
+
+```bash
+python3 monitor.py
+
+
+
+The script automatically generates a server health report inside:
+
+```text
+reports/server_report.txt
