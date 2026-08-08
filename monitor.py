@@ -63,3 +63,38 @@ print ("Free :", round(free_disk, 2), "GB")
 print ("Usage :", disk_usage, "%")
 print ("Ip Address :" , ip_address)
 print ("Uptime :", days, "days,", hours, "hours,", minutes, "minutes")
+
+report = f"""==============================
+SERVER HEALTH REPORT
+==============================
+
+Hostname : {hostname}
+Current User : {current_user}
+Date : {current_datetime}
+Operating System : {operating_system}
+Kernel : {kernel_version}
+
+CPU Usage : {cpu_usage} %
+
+Memory Usage:
+Total : {total_ram:.2f} GB
+Used : {used_ram:.2f} GB
+Free : {free_ram:.2f} GB
+Usage : {memory_usage} %
+
+Disk Usage:
+Total : {total_disk:.2f} GB
+Used : {used_disk:.2f} GB
+Free : {free_disk:.2f} GB
+Usage : {disk_usage} %
+
+IP Address : {ip_address}
+
+Uptime : {days} Days, {hours} Hours, {minutes} Minutes
+==============================
+"""
+
+with open("reports/server_report.txt", "w") as file:
+    file.write(report)
+
+print ("Report generated successfully: reports/server_report.txt")

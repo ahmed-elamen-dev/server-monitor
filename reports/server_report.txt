@@ -1,0 +1,28 @@
+==============================
+SERVER HEALTH REPORT
+==============================
+
+Hostname : ahmed-VMware-Virtual-Platform
+Current User : ahmed
+Date : 2026-08-08 14:36:08.124098
+Operating System : Linux
+Kernel : 7.0.0-29-generic
+
+CPU Usage : 4.6 %
+
+Memory Usage:
+Total : 7.11 GB
+Used : 1.48 GB
+Free : 3.53 GB
+Usage : 20.8 %
+
+Disk Usage:
+Total : 97.87 GB
+Used : 12.58 GB
+Free : 80.28 GB
+Usage : 13.5 %
+
+IP Address : 192.168.62.128
+
+Uptime : 0 Days, 1 Hours, 59 Minutes
+==============================
