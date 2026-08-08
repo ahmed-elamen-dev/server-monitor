@@ -63,3 +63,30 @@ The script automatically generates a server health report inside:
 
 ```text
 reports/server_report.txt
+
+
+
+
+## Sample Output
+
+```text
+Hostname : ahmed-VMware-Virtual-Platform
+Current User : ahmed
+Operating System : Linux
+Kernel Version : 7.0.0-29-generic
+CPU Usage : 4.3 %
+
+Memory Usage:
+Total : 7.11 GB
+Used : 2.30 GB
+Free : 1.33 GB
+Usage : 32.3 %
+
+Disk Usage:
+Total : 97.87 GB
+Used : 12.64 GB
+Free : 80.22 GB
+Usage : 13.6 %
+
+IP Address : 192.168.62.128
+Uptime : 0 Days, 3 Hours, 25 Minutes
