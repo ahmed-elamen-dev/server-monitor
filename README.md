@@ -43,11 +43,9 @@ server-monitor/
 
 1. Clone the repository:
 ```bash
-git clone <your-github-repository-url>
+git clone https://github.com/ahmed-elamen-dev/server-monitor.git
 cd server-monitor
 
-
-pip3 install -r requirements.txt
  ```
 ## How to Run
 
