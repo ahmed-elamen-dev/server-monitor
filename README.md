@@ -1,7 +1,7 @@
 # Server Health Monitor
 
 ## Project Description
-
+![Project Structure](screenshots/project_structure.png)
 A Python-based Linux server monitoring tool that collects important system information and generates a server health report automatically.
 
 ## Features
@@ -49,7 +49,7 @@ cd server-monitor
  ```
 ## How to Run
 
-
+![Running Python Script](screenshots/python_script.png)
 Run the monitoring script using:
 
 ```bash
@@ -66,6 +66,8 @@ reports/server_report.txt
 
 
 ## Sample Output
+
+![Generated Report](screenshots/generated_report.png)
 
 ```text
 Hostname : ahmed-VMware-Virtual-Platform
@@ -88,3 +90,16 @@ Usage : 13.6 %
 
 IP Address : 192.168.62.128
 Uptime : 0 Days, 3 Hours, 25 Minutes
+
+
+## Git Commit History
+
+![Git Commit History](screenshots/git_commit_history.png)
+
+## GitHub Repository
+
+![GitHub Repository](screenshots/github_rebository.png)
+
+
+
+
